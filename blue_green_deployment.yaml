@@ -1,0 +1,17 @@
+deployment-repo/
+├── helm-charts/
+│   └── my-app/
+│       ├── Chart.yaml
+│       ├── values.yaml            # Common values for both environments
+│       ├── templates/
+│       │   ├── deployment.yaml    # Templated Kubernetes deployment
+│       │   ├── service.yaml       # Templated Kubernetes service
+│       │   └── ingress.yaml       # Templated Kubernetes ingress
+│       └── values-blue.yaml       # Values specific to Blue environment
+│       └── values-green.yaml      # Values specific to Green environment
+├── manifests/
+│   ├── deployment-blue.yaml       # Kubernetes deployment for Blue environment
+│   ├── deployment-green.yaml      # Kubernetes deployment for Green environment
+│   ├── service.yaml               # Service pointing to Blue or Green
+│   └── ingress.yaml               # Ingress with routing rules
+└── README.md                      # Documentation
