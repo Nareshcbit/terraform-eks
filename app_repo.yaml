@@ -1,21 +1,9 @@
 my-application-repo/
 ├── app/
 │   ├── src/
-│   ├── Dockerfile
-│   ├── requirements.txt
-├── charts/
-│   └── my-app/
-│       ├── Chart.yaml
-│       ├── values.yaml
-│       ├── templates/
-│       │   ├── deployment.yaml
-│       │   ├── service.yaml
-│       │   └── ingress.yaml
-│       └── values-dev.yaml
-│       └── values-prod.yaml
-├── buildspec.yml
-└── .argocd/
-    ├── applications/
-    │   ├── dev.yaml
-    │   └── prod.yaml
-    └── app-of-apps.yaml
+│   │   └── ...               # Application source code (e.g., Python, Java, Node.js)
+│   ├── Dockerfile            # Dockerfile for building the application image
+│   ├── requirements.txt      # Application dependencies (e.g., Python requirements)
+│   └── ...                   # Additional app files (e.g., README.md, .env.sample)
+├── buildspec.yml             # CodeBuild buildspec file for CI/CD pipeline (if applicable)
+└── .gitignore                # Ignore files that shouldn't be committed
