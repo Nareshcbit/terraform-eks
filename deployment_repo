@@ -10,19 +10,6 @@ deployment-repo/
 │       └── values/
 │           ├── values-dev.yaml    # Helm values for dev environment
 │           ├── values-prod.yaml   # Helm values for prod environment
-├── k8s/
-│   ├── base/
-│   │   ├── deployment.yaml        # Base Kubernetes deployment (if not using Helm)
-│   │   ├── service.yaml           # Base Kubernetes service (if not using Helm)
-│   │   ├── ingress.yaml           # Base Kubernetes ingress (if not using Helm)
-│   │   └── kustomization.yaml     # Base Kustomize configuration
-│   ├── overlays/
-│   │   ├── dev/
-│   │   │   ├── kustomization.yaml # Dev-specific Kustomize overlay
-│   │   │   └── patch-deployment.yaml # Dev-specific patch for deployment
-│   │   └── prod/
-│   │       ├── kustomization.yaml # Prod-specific Kustomize overlay
-│   │       └── patch-deployment.yaml # Prod-specific patch for deployment
 ├── argo-apps/
 │   ├── dev.yaml                   # Argo CD application for dev environment
 │   └── prod.yaml                  # Argo CD application for prod environment
