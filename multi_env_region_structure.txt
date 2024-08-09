@@ -1,0 +1,33 @@
+terraform-clusters/
+├── modules/
+│   └── eks/
+│       ├── main.tf
+│       ├── variables.tf
+│       ├── outputs.tf
+│       └── ...
+├── environments/
+│   ├── dev/
+│   │   ├── us-west-2/
+│   │   │   ├── main.tf
+│   │   │   ├── terraform.tfvars
+│   │   │   └── backend.tf
+│   │   └── us-east-1/
+│   │       ├── main.tf
+│   │       ├── terraform.tfvars
+│   │       └── backend.tf
+│   └── prod/
+│       ├── us-west-2/
+│       │   ├── main.tf
+│       │   ├── terraform.tfvars
+│       │   └── backend.tf
+│       └── us-east-1/
+│           ├── main.tf
+│           ├── terraform.tfvars
+│           └── backend.tf
+└── buildspecs/
+    ├── dev/
+    │   ├── buildspec-us-west-2.yml
+    │   └── buildspec-us-east-1.yml
+    └── prod/
+        ├── buildspec-us-west-2.yml
+        └── buildspec-us-east-1.yml
