@@ -1,0 +1,21 @@
+my-application-repo/
+├── app/
+│   ├── src/
+│   ├── Dockerfile
+│   ├── requirements.txt
+├── charts/
+│   └── my-app/
+│       ├── Chart.yaml
+│       ├── values.yaml
+│       ├── templates/
+│       │   ├── deployment.yaml
+│       │   ├── service.yaml
+│       │   └── ingress.yaml
+│       └── values-dev.yaml
+│       └── values-prod.yaml
+├── buildspec.yml
+└── .argocd/
+    ├── applications/
+    │   ├── dev.yaml
+    │   └── prod.yaml
+    └── app-of-apps.yaml
