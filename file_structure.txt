@@ -1,0 +1,16 @@
+terraform_project/
+  ├── modules/
+  │   └── eks/
+  │       ├── main.tf
+  │       ├── variables.tf
+  │       └── outputs.tf
+  ├── environments/
+  │   ├── dev/
+  │   │   ├── main.tf
+  │   │   └── terraform.tfvars
+  │   ├── staging/
+  │   │   ├── main.tf
+  │   │   └── terraform.tfvars
+  │   └── prod/
+  │       ├── main.tf
+  │       └── terraform.tfvars
